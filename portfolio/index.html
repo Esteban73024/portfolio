@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Développeur Web Freelance</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">TILLARD--DESMOULIN Esteban</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">Développeur Web</span>
+                <br>Freelance
+            </h1>
+            <p class="hero-subtitle">Je crée des sites web modernes, performants et sur-mesure qui boostent votre présence en ligne.</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card">
+                <i class="fab fa-html5"></i>
+            </div>
+            <div class="floating-card">
+                <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="floating-card">
+                <i class="fab fa-js-square"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Passionné par le développement web, j'aide les entreprises et indépendants à créer une présence digitale impactante.</p>
+                    <p>Avec une expertise en <strong>HTML5, CSS3, JavaScript</strong> et les frameworks modernes, je transforme vos idées en sites web performants et responsive.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Projets réalisés</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Satisfaction client</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2 ans</h3>
+                            <p>Expérience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="profile-image">
+                        <img src="images/profile.jpg" alt="Photo de profil">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Mes projets</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Sites Web</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-card">
+                        <img src="https://via.placeholder.com/400x250/2563eb/ffffff?text=Projet+1" alt="Projet 1">
+                        <div class="portfolio-overlay">
+                            <h3>Site Corporate</h3>
+                            <p>Site vitrine moderne et responsive</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="link-icon"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="link-icon"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-card">
+                        <img src="https://via.placeholder.com/400x250/059669/ffffff?text=E-commerce" alt="Projet 2">
+                        <div class="portfolio-overlay">
+                            <h3>Boutique en ligne</h3>
+                            <p>Plateforme e-commerce complète</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="link-icon"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="link-icon"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-card">
+                        <img src="https://via.placeholder.com/400x250/7c3aed/ffffff?text=App+Mobile" alt="Projet 3">
+                        <div class="portfolio-overlay">
+                            <h3>Application Mobile</h3>
+                            <p>App responsive multi-plateforme</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="link-icon"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="link-icon"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-card">
+                        <img src="https://via.placeholder.com/400x250/10b981/ffffff?text=Dashboard" alt="Projet 4">
+                        <div class="portfolio-overlay">
+                            <h3>Dashboard Admin</h3>
+                            <p>Interface d'administration moderne</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="link-icon"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="link-icon"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span>HTML5</span>
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>CSS3 / Tailwind</span>
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>JavaScript / React</span>
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span>Node.js</span>
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>PHP</span>
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>MySQL</span>
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Outils</h3>
+                    <div class="skill-tags">
+                        <span><i class="fab fa-git-alt"></i> Git</span>
+                        <span><i class="fab fa-figma"></i> Figma</span>
+                        <span><i class="fab fa-wordpress"></i> WordPress</span>
+                        <span>VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Travaillons ensemble</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Prêt pour votre projet ?</h3>
+                    <p>Discutons de votre idée et créons quelque chose d'incroyable ensemble !</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>e24330073024@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>07 66 33 64 90</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Périgueux, France</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Votre message..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 TILLARD--DESMOULIN Esteban. Tous droits réservés.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
